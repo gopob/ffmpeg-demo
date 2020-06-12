@@ -12,8 +12,5 @@
   "devDependencies": {
     "husky": "4.2.3",
     "lerna": "3.20.2"
-  },
-  "dependencies": {
-    "react-player": "^2.3.0"
   }
 }

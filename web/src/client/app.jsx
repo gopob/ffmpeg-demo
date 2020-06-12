@@ -25,11 +25,10 @@ const spaces = [
     name: 'public',
     layout: AuthLayout,
     routes: Object.values(routes).filter((r) => r.private === false),
-  }
+  },
 ];
 
 export function App() {
-
   return (
     <Provider store={store}>
       <ConnectedRouter history={history}>
