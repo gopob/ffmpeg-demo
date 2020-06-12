@@ -5,8 +5,8 @@
   "jwt": {
     "secret": "the_secret"
   },
-  "apiUrl": "http://localhost:3001",
-  "webUrl": "http://localhost:3002",
+  "apiUrl": "http://ec2-13-48-31-203.eu-north-1.compute.amazonaws.com:3001/",
+  "webUrl": "http://ec2-13-48-31-203.eu-north-1.compute.amazonaws.com:3002/",
   "redis": {
     "host": "redis",
     "port": 6379

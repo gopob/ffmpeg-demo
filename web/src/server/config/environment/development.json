@@ -1,5 +1,5 @@
 {
-  "apiUrl": "http://localhost:3001",
+  "apiUrl": "http://ec2-13-48-31-203.eu-north-1.compute.amazonaws.com:3001/",
   "landingUrl": "http://localhost:3000",
   "webSocketUrl": "http://localhost:8082"
 }
