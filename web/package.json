@@ -1,0 +1,124 @@
+{
+  "name": "react-starter",
+  "version": "3.5.0",
+  "description": "Koa react",
+  "private": false,
+  "main": "src/server/app.js",
+  "author": "Paralect",
+  "license": "MIT",
+  "keywords": [
+    "koa",
+    "react",
+    "redux",
+    "paralect"
+  ],
+  "scripts": {
+    "build-client": "webpack -p --config src/client/webpack.config.js",
+    "start": "node src/server/app.js",
+    "test": "run-s test:**",
+    "test:server": "eslint ./src/server",
+    "test:client": "eslint --ext js --ext jsx ./src/client",
+    "test:lint-styles": "stylelint \"src/client/**/*.pcss\"",
+    "development": "nodemon --watch src/server --watch src/client/webpack.dev.config.js src/server/app.js",
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ext js --ext jsx",
+      "git add"
+    ],
+    "*.pcss": [
+      "stylelint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@paralect/common-logger": "0.1.10",
+    "app-module-path": "2.2.0",
+    "axios": "0.18.1",
+    "babel-plugin-lodash": "3.3.4",
+    "classnames": "2.2.6",
+    "connected-react-router": "6.5.2",
+    "cssnano": "4.1.10",
+    "file-loader": "4.0.0",
+    "handlebars": "4.1.2",
+    "history": "4.9.0",
+    "html-webpack-plugin": "3.2.0",
+    "incstr": "1.2.3",
+    "koa": "2.7.0",
+    "koa-logger": "3.2.1",
+    "koa-mount": "4.0.0",
+    "koa-router": "7.4.0",
+    "koa-static": "5.0.0",
+    "koa-views": "6.2.0",
+    "koa-webpack": "5.2.4",
+    "lodash": "4.17.14",
+    "lodash-webpack-plugin": "0.11.5",
+    "nodemon": "1.19.1",
+    "normalize.css": "8.0.1",
+    "postcss-import": "12.0.1",
+    "postcss-nested": "4.1.2",
+    "postcss-preset-env": "6.7.0",
+    "prop-types": "15.7.2",
+    "qs": "6.9.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-hot-loader": "4.12.7",
+    "react-icon-base": "2.1.2",
+    "react-icons": "3.7.0",
+    "react-player": "2.3.0",
+    "react-redux": "7.1.0",
+    "react-router-dom": "5.1.2",
+    "redux": "4.0.4",
+    "redux-thunk": "2.3.0",
+    "socket.io-client": "2.2.0",
+    "uuid": "3.3.2",
+    "webpack": "4.35.3",
+    "webpack-cli": "3.3.6",
+    "yup": "0.27.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.0",
+    "@babel/core": "7.5.4",
+    "@babel/plugin-proposal-class-properties": "7.5.0",
+    "@babel/plugin-proposal-export-namespace-from": "7.5.2",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/polyfill": "7.4.4",
+    "@babel/preset-env": "7.5.4",
+    "@babel/preset-react": "7.0.0",
+    "all-contributors-cli": "6.8.0",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
+    "babel-plugin-inline-react-svg": "1.1.0",
+    "babel-plugin-module-resolver": "3.2.0",
+    "babel-plugin-react-css-modules": "5.2.6",
+    "css-loader": "3.0.0",
+    "eslint": "6.7.2",
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.17.0",
+    "husky": "4.0.0-beta.5",
+    "lint-staged": "9.5.0",
+    "mini-css-extract-plugin": "0.8.0",
+    "npm-run-all": "4.1.5",
+    "postcss-loader": "3.0.0",
+    "style-loader": "0.23.1",
+    "stylelint": "10.1.0",
+    "stylelint-config-standard": "18.3.0",
+    "url-loader": "2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paralect/koa-react-starter.git"
+  },
+  "engines": {
+    "node": ">= 6"
+  }
+}
