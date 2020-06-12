@@ -13,7 +13,7 @@ export const routes = {
   default: {
     ...defaults,
     name: 'default',
-    path: '/default',
+    path: '/',
     exact: false,
     private: false,
   },

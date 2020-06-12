@@ -21,22 +21,6 @@ const handler = async (ctx) => {
 
   });
 
-
-  // const isExistProject = await service.exists({ _id: id });
-
-  // if (!isExistProject) {
-  //   ctx.throw(404);
-  // }
-
-  // const updatedProject = await service.updateProject(
-  //   { _id: id },
-  //   {
-  //     $set: {
-  //       ...updatedProjectData,
-  //     },
-  //   },
-  // );
-
   ctx.body = {};
 };
 
